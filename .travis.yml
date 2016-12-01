@@ -17,6 +17,21 @@ env:
     version: 14.04
     init: /sbin/init
     run_opts: ""
+  - ansible: 1.9.6
+    distribution: centos
+    version: 7
+    init: /usr/sbin/init
+    run_opts: "--privileged -e 'container=docker'  -v /sys/fs/cgroup:/sys/fs/cgroup"
+  - ansible: 2.0.2.0
+    distribution: centos
+    version: 7
+    init: /usr/sbin/init
+    run_opts: "--privileged -e 'container=docker'  -v /sys/fs/cgroup:/sys/fs/cgroup"
+  - ansible: 2.1.0.0
+    distribution: centos
+    version: 7
+    init: /usr/sbin/init
+    run_opts: "--privileged -e 'container=docker'  -v /sys/fs/cgroup:/sys/fs/cgroup"
 
 services:
   - docker

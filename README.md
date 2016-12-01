@@ -15,7 +15,7 @@ It is advisable that `scp_if_ssh` be set to `true` in the `ssh_connection` secti
 scp_if_ssh=True
 ```
 
-Other than that, only Ansible itself is required.  Tested using Ansible 1.9, 2.0.2.0 and 2.1.0.0.  Works on Ubuntu 14.04 and 16.04, untested on other versions.
+Other than that, only Ansible itself is required.  Tested using Ansible 1.9, 2.0.2.0 and 2.1.0.0.  Works on Ubuntu 14.04 and 16.04 as well as CentOS 7, untested on other versions.
 
 ## Role Variables
 
