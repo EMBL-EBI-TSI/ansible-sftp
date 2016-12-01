@@ -1,4 +1,10 @@
 ---
+# If CentOS, change service name for the handler.
+- name: SFTP-Server | Check OS
+  set_fact:
+    service_name: "sshd"
+  when: "'{{ansible_distribution}}' == 'CentOS'"
+
 # Creates group for SFTP users.
 - name: SFTP-Server | Create sftp user group
   group: name={{ sftp_group_name }}
