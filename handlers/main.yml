@@ -1,4 +1,4 @@
 ---
 - name: SFTP-Server | Restart sshd
-  service: name="{{ service_name | default(ssh)}}"
+  service: name="{{ service_name | default('ssh')}}"
            state=restarted
